@@ -8,9 +8,9 @@ The way I see it, there are three parts to this
 3. Back End Database
 
 
-As always, let's make sure we have python setup and configured before we do anthing else: 
-
 # set up environment
+
+As always, let's make sure we have python setup and configured before we do anthing else: 
 
 ## you will need python 3.10 - use pyenv perhaps to be able to install various pythons
 
