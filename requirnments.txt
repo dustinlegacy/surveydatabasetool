@@ -1,1 +1,1 @@
-placeholder
+fastapi==0.124.0
