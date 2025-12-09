@@ -30,11 +30,22 @@ $ source .venv-3.10/bin/activate
 
 # Middle API Connection #
 
-I am going to start with the middle part of this for now as it is the most familiar to me. Hopefully getting some traction going will motivate me to to push through and finish this project. 
+I am going to start with the middle part of this for now as it is the most familiar to me. Hopefully getting some traction going will motivate me to to push through and finish this project.
 
-chatgpt says that the best version to use is fastapi. 0.124.0 is the newest version so I will put that into the requirements.txt file.
+We are going to have to build an API from the ground up here. There are, fortunately, existing python packages that allow for this.
 
-Now that we have our framework, we still need some sort of server to actually run our project. Chat GPT says that uvicorn is the best bet for this. After doing a quick Google search, uvicorn is an Asynchronous Server Gateway Interface (ASGI). Essentially this is a tool for running python applications. 
+1. Chatgpt says that the best framework to use is fastapi.
+
+0.124.0 is the newest version so I will put that into the requirements.txt file.
+
+2. Now that we have our framework, we still need some sort of server to actually run our project. GPT says that uvicorn is the best bet here. Uvicorn is an Asynchronous Server Gateway Interface (ASGI). Essentially this is a tool for running python applications.
 
 PYPL says that 0.38.0 is the newest uvicorn version so I will throw that in to requirements.txt as well.
 
+3. Next we need a method to actually connect to some sort of SQL server. I have used pymySQL in the past, so I will be going with that here. I am still undecided if I am going to be using a local SQL server or some sort of cloud option, but this will allow for both. I will probably start local and build out into GCP or AWS.
+
+PYPL says that 2.0.44 is the newest version so we are throwing that in requirements.txt as well.
+
+4. Finally, we need an odbc driver to put this all together. The driver is used to actually execute sql commands using PYMYSQL.
+
+PYPL says that 5.3.0 is the newest version so into requirements.txt we go.
