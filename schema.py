@@ -11,7 +11,7 @@ class SurveyResponseCreate(BaseModel):
 class SurveyResponseRead(BaseModel):
     name: str
     email: str
-    response: str
+    feedback: str
 
     class Config:
         orm_mode = True
