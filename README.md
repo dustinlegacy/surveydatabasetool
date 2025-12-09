@@ -32,3 +32,9 @@ $ source .venv-3.10/bin/activate
 
 I am going to start with the middle part of this for now as it is the most familiar to me. Hopefully getting some traction going will motivate me to to push through and finish this project. 
 
+chatgpt says that the best version to use is fastapi. 0.124.0 is the newest version so I will put that into the requirements.txt file.
+
+Now that we have our framework, we still need some sort of server to actually run our project. Chat GPT says that uvicorn is the best bet for this. After doing a quick Google search, uvicorn is an Asynchronous Server Gateway Interface (ASGI). Essentially this is a tool for running python applications. 
+
+PYPL says that 0.38.0 is the newest uvicorn version so I will throw that in to requirements.txt as well.
+
