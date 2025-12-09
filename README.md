@@ -49,3 +49,9 @@ PYPL says that 2.0.44 is the newest version so we are throwing that in requireme
 4. Finally, we need an odbc driver to put this all together. The driver is used to actually execute sql commands using PYMYSQL.
 
 PYPL says that 5.3.0 is the newest version so into requirements.txt we go.
+
+
+# Backend SQL Database #
+
+
+Since I am using MacOS, there is no local SQL application. 
