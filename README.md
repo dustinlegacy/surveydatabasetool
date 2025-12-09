@@ -74,6 +74,10 @@ For now, in my local setup, I created a database called survey_database. I don't
 
 Now it's time to create our first .py file. 
 
-[main script](main.py)
+[database file](database.py): this file is a function that will connect to our database.
+[models file](models.py): this file defines the table structure that we are are going to be using.
+[operations file](crud.py): this file actually performs the operations that we are going to be using (inset, query etc).
+[main script](main.py): This defines the api endpoints and puts all of the above pieces together.
+
 
 
