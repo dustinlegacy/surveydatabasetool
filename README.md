@@ -54,4 +54,8 @@ PYPL says that 5.3.0 is the newest version so into requirements.txt we go.
 # Backend SQL Database #
 
 
-12/8/2025: Since I am using MacOS, there is no local SQL application. I downloaded my sql and am just running it via terminal commands for now. I am going to updated this. I tried using MySQLWorkbench as UI option but it keeps crashing hence terminal commands. I am 100% switching to a cloud option once I get this more flushed out.
+# 12/8/2025: # 
+Since I am using MacOS, there is no local SQL application. I downloaded my sql and am just running it via terminal commands for now. I am going to updated this. I tried using MySQLWorkbench as UI option but it keeps crashing hence terminal commands. I am 100% switching to a cloud option once I get this more flushed out.
+
+For now, in my local setup, I created a database called survey_database. I don't think I need to create a table for now because sqlalchemy will do that for me.
+
