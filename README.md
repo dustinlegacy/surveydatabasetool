@@ -113,7 +113,12 @@ We will also need to the the following packages: google-cloud-sqlconnector and c
 
 We will need to make a new file for our clouddatabase, you can find that here: [cloud database](clouddatabase.py).
 
-
 NOTE: I made a .env file and .gitignore to hide my GCP credentials.
+
+In the GCP API, you go to Cloud SQL API and click "Enable".
+
+Once that is done, then you go to 
+
+
 
 
