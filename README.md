@@ -123,7 +123,8 @@ NOTE: I made a .env file and .gitignore to hide my GCP credentials.
 
 4. Next, you have to create a database. I called mine "cloud_survey_database"
 
-5. Next, you create the user 
+5. Next, you create the user. Add the UN and PW to the .env file.
+
 
 
 
