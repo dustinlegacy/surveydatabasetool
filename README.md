@@ -134,6 +134,18 @@ You can find your IP by searching “what is my IP” in Google
 7. You can run the [test_connection](test_connection.py) file and create a  test table using [create_tables](create_tables.py) files
 
 
+Now run
+
+```
+uvicorn main:app --reload
+```
+
+and execute the post REQUEST 
+
+and the same payload should appear in the cloud database now! 
+
+
+
 
 
 
