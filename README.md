@@ -94,7 +94,24 @@ INFO:     Application startup complete.
 INFO:     127.0.0.1:53976 - "GET /docs HTTP/1.1" 200 OK
 INFO:     127.0.0.1:53976 - "GET /openapi.json HTTP/1.1" 200 OK
 ```
+# UI #
 
-After this, you can go to http://127.0.0.1:8000/docs#/ you your local machine to see your created API. Pretty cool!
+After running the code succesfully above, FASTAPI creates a local UI for you. You can go to http://127.0.0.1:8000/docs#/ you your local machine to see your created API. Pretty cool!
+
+Now we have a completed local tool. Now we want both the data base and the UI to become cloud based.
+
+
+# Cloud Based Database #
+
+So for switching our database, I am going to use Google Cloud Platform due to my familiarity with the platform.
+
+Furthermore, GCP allows for a tier tree. First you need to create a new email to connect the account to. I created the email: surveydatabasetool@gmail.com. 
+
+Now we can use this email to create a free GCP account.
+
+We will also need to the the following packages: google-cloud-sqlconnector and cryptography. I will add them to requirnments.txt
+
+We will need to make a new file for our clouddatabase, you can find that here: [cloud database](clouddatabase.py).
+
 
 
