@@ -131,6 +131,8 @@ Under Public IP, add your current IP to the allowed networks list
 
 You can find your IP by searching “what is my IP” in Google
 
+7. You can run the [test_connection](test_connection.py) file and create a  test table using [create_tables](create_tables.py) files
+
 
 
 
