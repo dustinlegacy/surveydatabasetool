@@ -1,6 +1,6 @@
 # models.py
 from sqlalchemy import Column, Integer, String
-from database import Base
+from databasecloud import Base
 
 class SurveyResponse(Base):
     __tablename__ = "survey_responses"
