@@ -5,5 +5,5 @@ python-dotenv==1.2.1
 uvicorn==0.38.0
 SQLAlchemy==2.0.44
 cloud-sql-python-connector==1.19.0
-cloud-sql-connector==1.19.0
+##cloud-sql-connector==1.19.0
 cryptography==43.0.1
