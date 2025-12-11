@@ -154,8 +154,20 @@ NOTE: The "D" in Dockerfile must be capitalized. I learned that one the hard way
 
 You can find the file here: [Dockerfile](Dockerfile).
 
+Now let's push our dockerfile into GCP. 
 
+2. First code the following to set your project as the default in GCP
 
+```
+gcloud config set project cohesive-cell-480800-u8
+
+```
+
+3. Then build your docker image/container in GCP. NOTE: Make your your service account has the Storage Admin and Cloud Build Editor IAM roles granted.
+ 
+```
+gcloud builds submit --tag gcr.io/cohesive-cell-480800-u8/surveydatabasetool
+```
 
 
 
