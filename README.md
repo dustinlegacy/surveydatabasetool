@@ -204,4 +204,9 @@ I am not going to overthinkg this. I'm just gonna use ChatGPT for this and have 
 
 Here is the file if you want to see it, but it doesn't matter [index.html](index.html).
 
+Cool thing I learned, Github hosts webpages for you in pages.
+
+1. Scroll left sidebar and Pages, Deploy from a branch, Branch: Select main, Folder: Select / (root), Click Save.
+
+
 
