@@ -6,6 +6,9 @@ from crud import create_survey_response, get_all_responses
 from schemas import SurveyResponseCreate, SurveyResponseRead
 from typing import List
 
+# Create FastAPI instance
+app = FastAPI(title="Survey API")  # <-- this must be before any @app.get/@app.post
+
 # Root endpoint for health check
 @app.get("/")
 def root():
@@ -14,8 +17,6 @@ def root():
 
 # Create tables if they don’t exist
 Base.metadata.create_all(bind=engine)
-
-app = FastAPI(title="Survey API")
 
 # Dependency to get DB session
 def get_db():
