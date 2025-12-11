@@ -6,6 +6,12 @@ from crud import create_survey_response, get_all_responses
 from schemas import SurveyResponseCreate, SurveyResponseRead
 from typing import List
 
+# Root endpoint for health check
+@app.get("/")
+def root():
+    return {"status": "ok"}
+
+
 # Create tables if they don’t exist
 Base.metadata.create_all(bind=engine)
 
