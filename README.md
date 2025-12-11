@@ -169,8 +169,19 @@ gcloud config set project cohesive-cell-480800-u8
 gcloud builds submit --tag gcr.io/cohesive-cell-480800-u8/surveydatabasetool
 ```
 
+Once that runs sucessfully, you will be able to see your docker image in the GCP UI by typing "Container Registry" in the search bar.
 
+Now let's deploy the job!
 
+# Deploying the Job #'
+
+1. Go to "Cloud Run" in the GCP console and enable it.
+
+2. Click Create Service.
+ 
+3. Choose Deploy one revision from an existing container image.
+
+Now let's enter our image URL:
 
 
 
