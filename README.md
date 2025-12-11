@@ -208,5 +208,26 @@ Cool thing I learned, Github hosts webpages for you in pages.
 
 1. Scroll left sidebar and Pages, Deploy from a branch, Branch: Select main, Folder: Select / (root), Click Save.
 
+NOTE: 
+
+I had to add the following code into my main.py file to allow the Cross-Origin Resource Sharing or CORS. Basically this allows specific websites to submit to my database. Without adding this part below, it just flags an error and doesn't submit. 
+
+```
+{
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://hoyedustin.github.io",
+        "https://hoyedustin.github.io/surveydatabasetool"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+}
+```
+
 
 
