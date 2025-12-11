@@ -1,35 +1,32 @@
-# databasecloud.py
-from google.cloud.sql.connector import Connector, IPTypes
+import os
+from google.cloud.sql.connector import Connector
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
+# Environment variables
+DB_USER = os.environ["DB_USER"]
+DB_PASS = os.environ["DB_PASSWORD"]
+DB_NAME = os.environ["DB_NAME"]
+INSTANCE_CONNECTION_NAME = os.environ["INSTANCE_CONNECTION_NAME"]
 
-instance_connection_name = os.getenv("INSTANCE_CONNECTION_NAME")  
-db_user = os.getenv("DB_USER")
-db_pass = os.getenv("DB_PASS")
-db_name = os.getenv("DB_NAME")
-
+# Initialize Cloud SQL Python Connector
 connector = Connector()
 
 def getconn():
     conn = connector.connect(
-        instance_connection_name,
+        INSTANCE_CONNECTION_NAME,
         "pymysql",
-        user=db_user,
-        password=db_pass,
-        db=db_name,
-        ip_type=IPTypes.PUBLIC     # Change to PRIVATE if using VPC
+        user=DB_USER,
+        password=DB_PASS,
+        db=DB_NAME
     )
     return conn
 
+# SQLAlchemy engine
 engine = create_engine(
     "mysql+pymysql://",
-    creator=getconn,
+    creator=getconn
 )
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
 Base = declarative_base()
